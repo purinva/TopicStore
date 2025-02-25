@@ -8,6 +8,8 @@ namespace Application.Mapping
     {
         public MappingProfile()
         {
+            CreateMap<Topic, ResponseTopicDto>();
+
             CreateMap<UpdateTopicDto, Topic>();
 
             CreateMap<CreateTopicDto, Topic>();

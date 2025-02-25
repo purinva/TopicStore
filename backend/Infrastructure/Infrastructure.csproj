@@ -6,11 +6,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="CQRS\Topics\Commands\CreateTopic\" />
-    <Folder Include="CQRS\Topics\Commands\DeleteTopic\" />
-    <Folder Include="CQRS\Topics\Commands\UpdateTopic\" />
-    <Folder Include="CQRS\Topics\Queries\GetTopic\" />
-    <Folder Include="CQRS\Topics\Queries\GetTopics\" />
     <Folder Include="Data\DataDbContext\" />
   </ItemGroup>
 
