@@ -3,7 +3,7 @@ using MediatR;
 
 namespace Application.CQRS.Topics.Queries
 {
-    public class GetTopicByIdQuery 
+    public class GetTopicByIdQuery
         : IRequest<ResponseTopicDto>
     {
         public Guid Id { get; set; }

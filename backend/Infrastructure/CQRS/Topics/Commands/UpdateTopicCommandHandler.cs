@@ -4,6 +4,7 @@ using AutoMapper;
 using Infrastructure.Data.DataDbContext;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
+using Shared.Exceptions;
 
 namespace Infrastructure.CQRS.Topics.Commands
 {
@@ -17,12 +18,12 @@ namespace Infrastructure.CQRS.Topics.Commands
             CancellationToken cancellationToken)
         {
             var topic = await dbContext.Topics
-                .Where(t => t.Id == request.Id)
-                .FirstOrDefaultAsync(cancellationToken);
+                .FirstOrDefaultAsync(t => t.Id == request.updateTopicDto!.Id, 
+                cancellationToken);
 
             if (topic == null)
             {
-                throw new Exception($"Topic с id ({request.Id}) не найден");
+                throw new NotFoundException($"Topic с id ({request.updateTopicDto!.Id}) не найден");
             }
 
             mapper.Map(request.updateTopicDto, topic);

@@ -4,6 +4,7 @@ using AutoMapper;
 using Infrastructure.Data.DataDbContext;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
+using Shared.Exceptions;
 
 namespace Infrastructure.CQRS.Topics.Queries
 {
@@ -17,12 +18,12 @@ namespace Infrastructure.CQRS.Topics.Queries
             CancellationToken cancellationToken)
         {
             var topic = await dbContext.Topics
-                .Where(t => t.Id == request.Id)
-                .FirstOrDefaultAsync(cancellationToken);
+                .FirstOrDefaultAsync(t => t.Id == request.Id, 
+                cancellationToken);
 
             if (topic == null)
             {
-                throw new Exception($"Topic с id ({request.Id}) не найден");
+                throw new NotFoundException($"Topic с id ({request.Id}) не найден");
             }
 
             return mapper.Map<ResponseTopicDto>(topic);
