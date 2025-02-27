@@ -2,10 +2,10 @@
 using Application.Security;
 using AutoMapper;
 using Domain.Entities;
+using FluentValidation;
 using Infrastructure.Data.DataDbContext;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Shared.Exceptions;
 
 namespace Api.Controllers
 {
@@ -15,7 +15,9 @@ namespace Api.Controllers
         ApplicationDbContext dbContext,
         IJwtProvider jwtProvider,
         IPasswordService passwordService,
-        IMapper mapper)
+        IMapper mapper,
+        IValidator<LoginUserDto> loginUserDtoValidator,
+        IValidator<RegisterUserDto> registerUserDtoValidator)
         : ControllerBase
     {
         [HttpPost("login")]
@@ -23,14 +25,22 @@ namespace Api.Controllers
             [FromBody] LoginUserDto loginUserDto,
             CancellationToken cancellationToken)
         {
+            var validationResult = await loginUserDtoValidator
+                .ValidateAsync(loginUserDto);
+
+            if (!validationResult.IsValid)
+            {
+                return Results.BadRequest(validationResult.Errors);
+            }
+
             var user = await dbContext.Users
-                .FirstOrDefaultAsync(u => u.Email == loginUserDto.Email, 
+                .FirstOrDefaultAsync(u => u.Email == loginUserDto.Email,
                     cancellationToken);
 
             if (user == null || passwordService.VerifyPassword(
                 loginUserDto.Password!, user.PasswordHash!))
             {
-                throw new UnauthorizedException("Такой пользователь не зарегистрирован");
+                return Results.Problem("Такой пользователь не зарегистрирован", statusCode: 401);
             }
 
             var token = jwtProvider
@@ -44,13 +54,21 @@ namespace Api.Controllers
             [FromBody] RegisterUserDto registerUserDto,
             CancellationToken cancellationToken)
         {
+            var validationResult = await registerUserDtoValidator
+                .ValidateAsync(registerUserDto);
+
+            if (!validationResult.IsValid)
+            {
+                return Results.BadRequest(validationResult.Errors);
+            }
+
             var user = await dbContext.Users
                 .FirstOrDefaultAsync(u => u.Email == registerUserDto.Email,
                     cancellationToken);
 
             if (user != null)
             {
-                throw new ConflictException("Такой пользователь уже существует");
+                return Results.Conflict("Такой пользователь уже существует");
             }
 
             var newUser = mapper.Map<User>(registerUserDto);

@@ -1,5 +1,4 @@
 ﻿using System.Text;
-using Api.Middlewares;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 
@@ -14,7 +13,6 @@ namespace Api
             services.AddOpenApi();
 
             var jwtKey = Encoding.UTF8.GetBytes(configuration["Jwt:Key"]!);
-
             services
                 .AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                 .AddJwtBearer(options =>
@@ -37,8 +35,6 @@ namespace Api
         public static WebApplication UseApiServices(
             this WebApplication app)
         {
-            app.UseMiddleware<ExceptionMiddleware>();
-
             if (app.Environment.IsDevelopment())
             {
                 app.MapOpenApi();

@@ -1,14 +1,20 @@
 ﻿using Application.CQRS.Topics.Commands;
 using Application.CQRS.Topics.Queries;
 using Application.Dtos.Topics;
+using FluentValidation;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Api.Controllers
 {
     [ApiController]
+    [Authorize]
     [Route("api/[controller]")]
-    public class TopicController(IMediator mediator)
+    public class TopicController(
+        IMediator mediator,
+        IValidator<CreateTopicDto> createTopicDtoValidator,
+        IValidator<UpdateTopicDto> updateTopicDtoValidator)
         : ControllerBase
     {
 
@@ -16,6 +22,14 @@ namespace Api.Controllers
         public async Task<IResult> Create(
             [FromBody] CreateTopicDto createTopicDto)
         {
+            var validationResult = await createTopicDtoValidator
+                .ValidateAsync(createTopicDto);
+
+            if (!validationResult.IsValid)
+            {
+                return Results.BadRequest(validationResult.Errors);
+            }
+
             var command = new CreateTopicCommand 
             {
                 createTopicDto = createTopicDto 
@@ -43,10 +57,18 @@ namespace Api.Controllers
             return Results.Ok(result);
         }
 
-        [HttpPut]
+        [HttpPatch]
         public async Task<IResult> Update(
             [FromBody] UpdateTopicDto updateTopicDto)
         {
+            var validationResult = await updateTopicDtoValidator
+                .ValidateAsync(updateTopicDto);
+
+            if (!validationResult.IsValid)
+            {
+                return Results.BadRequest(validationResult.Errors);
+            }
+
             var command = new UpdateTopicCommand 
             {
                 updateTopicDto = updateTopicDto 

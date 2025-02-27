@@ -3,8 +3,72 @@
   "WorkspaceRootPath": "C:\\Users\\purin\\Desktop\\Programming\\Projects\\TopicStore\\backend\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{5DAD0990-77A4-49A2-8C0F-20397B79C44F}|Api\\Api.csproj|c:\\users\\purin\\desktop\\programming\\projects\\topicstore\\backend\\api\\controllers\\topiccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DAD0990-77A4-49A2-8C0F-20397B79C44F}|Api\\Api.csproj|solutionrelative:api\\controllers\\topiccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5DAD0990-77A4-49A2-8C0F-20397B79C44F}|Api\\Api.csproj|c:\\users\\purin\\desktop\\programming\\projects\\topicstore\\backend\\api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5DAD0990-77A4-49A2-8C0F-20397B79C44F}|Api\\Api.csproj|solutionrelative:api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DAD0990-77A4-49A2-8C0F-20397B79C44F}|Api\\Api.csproj|c:\\users\\purin\\desktop\\programming\\projects\\topicstore\\backend\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DAD0990-77A4-49A2-8C0F-20397B79C44F}|Api\\Api.csproj|solutionrelative:api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DAD0990-77A4-49A2-8C0F-20397B79C44F}|Api\\Api.csproj|c:\\users\\purin\\desktop\\programming\\projects\\topicstore\\backend\\api\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DAD0990-77A4-49A2-8C0F-20397B79C44F}|Api\\Api.csproj|solutionrelative:api\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D5E0F68-B8C2-448F-9ED3-7AABED2F3ADF}|Application\\Application.csproj|c:\\users\\purin\\desktop\\programming\\projects\\topicstore\\backend\\application\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D5E0F68-B8C2-448F-9ED3-7AABED2F3ADF}|Application\\Application.csproj|solutionrelative:application\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D5E0F68-B8C2-448F-9ED3-7AABED2F3ADF}|Application\\Application.csproj|c:\\users\\purin\\desktop\\programming\\projects\\topicstore\\backend\\application\\validators\\updatetopicdtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D5E0F68-B8C2-448F-9ED3-7AABED2F3ADF}|Application\\Application.csproj|solutionrelative:application\\validators\\updatetopicdtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D5E0F68-B8C2-448F-9ED3-7AABED2F3ADF}|Application\\Application.csproj|c:\\users\\purin\\desktop\\programming\\projects\\topicstore\\backend\\application\\validators\\registeruserdtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D5E0F68-B8C2-448F-9ED3-7AABED2F3ADF}|Application\\Application.csproj|solutionrelative:application\\validators\\registeruserdtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D5E0F68-B8C2-448F-9ED3-7AABED2F3ADF}|Application\\Application.csproj|c:\\users\\purin\\desktop\\programming\\projects\\topicstore\\backend\\application\\validators\\loginuserdtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D5E0F68-B8C2-448F-9ED3-7AABED2F3ADF}|Application\\Application.csproj|solutionrelative:application\\validators\\loginuserdtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D5E0F68-B8C2-448F-9ED3-7AABED2F3ADF}|Application\\Application.csproj|c:\\users\\purin\\desktop\\programming\\projects\\topicstore\\backend\\application\\validators\\createtopicdtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D5E0F68-B8C2-448F-9ED3-7AABED2F3ADF}|Application\\Application.csproj|solutionrelative:application\\validators\\createtopicdtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D5E0F68-B8C2-448F-9ED3-7AABED2F3ADF}|Application\\Application.csproj|c:\\users\\purin\\desktop\\programming\\projects\\topicstore\\backend\\application\\dtos\\topics\\createtopicdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D5E0F68-B8C2-448F-9ED3-7AABED2F3ADF}|Application\\Application.csproj|solutionrelative:application\\dtos\\topics\\createtopicdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D5E0F68-B8C2-448F-9ED3-7AABED2F3ADF}|Application\\Application.csproj|c:\\users\\purin\\desktop\\programming\\projects\\topicstore\\backend\\application\\dtos\\topics\\responsetopicdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D5E0F68-B8C2-448F-9ED3-7AABED2F3ADF}|Application\\Application.csproj|solutionrelative:application\\dtos\\topics\\responsetopicdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D5E0F68-B8C2-448F-9ED3-7AABED2F3ADF}|Application\\Application.csproj|c:\\users\\purin\\desktop\\programming\\projects\\topicstore\\backend\\application\\dtos\\topics\\updatetopicdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D5E0F68-B8C2-448F-9ED3-7AABED2F3ADF}|Application\\Application.csproj|solutionrelative:application\\dtos\\topics\\updatetopicdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D5E0F68-B8C2-448F-9ED3-7AABED2F3ADF}|Application\\Application.csproj|c:\\users\\purin\\desktop\\programming\\projects\\topicstore\\backend\\application\\dtos\\users\\loginuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D5E0F68-B8C2-448F-9ED3-7AABED2F3ADF}|Application\\Application.csproj|solutionrelative:application\\dtos\\users\\loginuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA9D44E7-8609-4280-888F-704CC54F64AA}|Infrastructure\\Infrastructure.csproj|c:\\users\\purin\\desktop\\programming\\projects\\topicstore\\backend\\infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA9D44E7-8609-4280-888F-704CC54F64AA}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D5E0F68-B8C2-448F-9ED3-7AABED2F3ADF}|Application\\Application.csproj|c:\\users\\purin\\desktop\\programming\\projects\\topicstore\\backend\\application\\security\\ijwtprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D5E0F68-B8C2-448F-9ED3-7AABED2F3ADF}|Application\\Application.csproj|solutionrelative:application\\security\\ijwtprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA9D44E7-8609-4280-888F-704CC54F64AA}|Infrastructure\\Infrastructure.csproj|c:\\users\\purin\\desktop\\programming\\projects\\topicstore\\backend\\infrastructure\\security\\jwtprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA9D44E7-8609-4280-888F-704CC54F64AA}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\security\\jwtprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D5E0F68-B8C2-448F-9ED3-7AABED2F3ADF}|Application\\Application.csproj|c:\\users\\purin\\desktop\\programming\\projects\\topicstore\\backend\\application\\dtos\\users\\registeruserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D5E0F68-B8C2-448F-9ED3-7AABED2F3ADF}|Application\\Application.csproj|solutionrelative:application\\dtos\\users\\registeruserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,20 +78,224 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Users\\purin\\Desktop\\Programming\\Projects\\TopicStore\\backend\\Api\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "Api\\Controllers\\AuthController.cs",
               "ToolTip": "C:\\Users\\purin\\Desktop\\Programming\\Projects\\TopicStore\\backend\\Api\\Controllers\\AuthController.cs",
               "RelativeToolTip": "Api\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFQAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-25T15:56:24.527Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TopicController.cs",
+              "DocumentMoniker": "C:\\Users\\purin\\Desktop\\Programming\\Projects\\TopicStore\\backend\\Api\\Controllers\\TopicController.cs",
+              "RelativeDocumentMoniker": "Api\\Controllers\\TopicController.cs",
+              "ToolTip": "C:\\Users\\purin\\Desktop\\Programming\\Projects\\TopicStore\\backend\\Api\\Controllers\\TopicController.cs",
+              "RelativeToolTip": "Api\\Controllers\\TopicController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-25T18:19:20.853Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "C:\\Users\\purin\\Desktop\\Programming\\Projects\\TopicStore\\backend\\Api\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "Api\\DependencyInjection.cs",
+              "ToolTip": "C:\\Users\\purin\\Desktop\\Programming\\Projects\\TopicStore\\backend\\Api\\DependencyInjection.cs",
+              "RelativeToolTip": "Api\\DependencyInjection.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA4AAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-25T18:20:13.523Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\purin\\Desktop\\Programming\\Projects\\TopicStore\\backend\\Api\\Program.cs",
+              "RelativeDocumentMoniker": "Api\\Program.cs",
+              "ToolTip": "C:\\Users\\purin\\Desktop\\Programming\\Projects\\TopicStore\\backend\\Api\\Program.cs",
+              "RelativeToolTip": "Api\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-25T18:20:07.973Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "C:\\Users\\purin\\Desktop\\Programming\\Projects\\TopicStore\\backend\\Application\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "Application\\DependencyInjection.cs",
+              "ToolTip": "C:\\Users\\purin\\Desktop\\Programming\\Projects\\TopicStore\\backend\\Application\\DependencyInjection.cs",
+              "RelativeToolTip": "Application\\DependencyInjection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T04:50:49.429Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UpdateTopicDtoValidator.cs",
+              "DocumentMoniker": "C:\\Users\\purin\\Desktop\\Programming\\Projects\\TopicStore\\backend\\Application\\Validators\\UpdateTopicDtoValidator.cs",
+              "RelativeDocumentMoniker": "Application\\Validators\\UpdateTopicDtoValidator.cs",
+              "ToolTip": "C:\\Users\\purin\\Desktop\\Programming\\Projects\\TopicStore\\backend\\Application\\Validators\\UpdateTopicDtoValidator.cs",
+              "RelativeToolTip": "Application\\Validators\\UpdateTopicDtoValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T04:48:32.337Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RegisterUserDtoValidator.cs",
+              "DocumentMoniker": "C:\\Users\\purin\\Desktop\\Programming\\Projects\\TopicStore\\backend\\Application\\Validators\\RegisterUserDtoValidator.cs",
+              "RelativeDocumentMoniker": "Application\\Validators\\RegisterUserDtoValidator.cs",
+              "ToolTip": "C:\\Users\\purin\\Desktop\\Programming\\Projects\\TopicStore\\backend\\Application\\Validators\\RegisterUserDtoValidator.cs",
+              "RelativeToolTip": "Application\\Validators\\RegisterUserDtoValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T04:46:26.577Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LoginUserDtoValidator.cs",
+              "DocumentMoniker": "C:\\Users\\purin\\Desktop\\Programming\\Projects\\TopicStore\\backend\\Application\\Validators\\LoginUserDtoValidator.cs",
+              "RelativeDocumentMoniker": "Application\\Validators\\LoginUserDtoValidator.cs",
+              "ToolTip": "C:\\Users\\purin\\Desktop\\Programming\\Projects\\TopicStore\\backend\\Application\\Validators\\LoginUserDtoValidator.cs",
+              "RelativeToolTip": "Application\\Validators\\LoginUserDtoValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T04:50:16.151Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CreateTopicDtoValidator.cs",
+              "DocumentMoniker": "C:\\Users\\purin\\Desktop\\Programming\\Projects\\TopicStore\\backend\\Application\\Validators\\CreateTopicDtoValidator.cs",
+              "RelativeDocumentMoniker": "Application\\Validators\\CreateTopicDtoValidator.cs",
+              "ToolTip": "C:\\Users\\purin\\Desktop\\Programming\\Projects\\TopicStore\\backend\\Application\\Validators\\CreateTopicDtoValidator.cs",
+              "RelativeToolTip": "Application\\Validators\\CreateTopicDtoValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T04:47:37.57Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CreateTopicDto.cs",
+              "DocumentMoniker": "C:\\Users\\purin\\Desktop\\Programming\\Projects\\TopicStore\\backend\\Application\\Dtos\\Topics\\CreateTopicDto.cs",
+              "RelativeDocumentMoniker": "Application\\Dtos\\Topics\\CreateTopicDto.cs",
+              "ToolTip": "C:\\Users\\purin\\Desktop\\Programming\\Projects\\TopicStore\\backend\\Application\\Dtos\\Topics\\CreateTopicDto.cs",
+              "RelativeToolTip": "Application\\Dtos\\Topics\\CreateTopicDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T05:37:42.317Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ResponseTopicDto.cs",
+              "DocumentMoniker": "C:\\Users\\purin\\Desktop\\Programming\\Projects\\TopicStore\\backend\\Application\\Dtos\\Topics\\ResponseTopicDto.cs",
+              "RelativeDocumentMoniker": "Application\\Dtos\\Topics\\ResponseTopicDto.cs",
+              "ToolTip": "C:\\Users\\purin\\Desktop\\Programming\\Projects\\TopicStore\\backend\\Application\\Dtos\\Topics\\ResponseTopicDto.cs",
+              "RelativeToolTip": "Application\\Dtos\\Topics\\ResponseTopicDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T05:41:31.76Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UpdateTopicDto.cs",
+              "DocumentMoniker": "C:\\Users\\purin\\Desktop\\Programming\\Projects\\TopicStore\\backend\\Application\\Dtos\\Topics\\UpdateTopicDto.cs",
+              "RelativeDocumentMoniker": "Application\\Dtos\\Topics\\UpdateTopicDto.cs",
+              "ToolTip": "C:\\Users\\purin\\Desktop\\Programming\\Projects\\TopicStore\\backend\\Application\\Dtos\\Topics\\UpdateTopicDto.cs",
+              "RelativeToolTip": "Application\\Dtos\\Topics\\UpdateTopicDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T05:41:28.225Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "LoginUserDto.cs",
+              "DocumentMoniker": "C:\\Users\\purin\\Desktop\\Programming\\Projects\\TopicStore\\backend\\Application\\Dtos\\Users\\LoginUserDto.cs",
+              "RelativeDocumentMoniker": "Application\\Dtos\\Users\\LoginUserDto.cs",
+              "ToolTip": "C:\\Users\\purin\\Desktop\\Programming\\Projects\\TopicStore\\backend\\Application\\Dtos\\Users\\LoginUserDto.cs",
+              "RelativeToolTip": "Application\\Dtos\\Users\\LoginUserDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-25T18:19:32.623Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "JwtProvider.cs",
+              "DocumentMoniker": "C:\\Users\\purin\\Desktop\\Programming\\Projects\\TopicStore\\backend\\Infrastructure\\Security\\JwtProvider.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Security\\JwtProvider.cs",
+              "ToolTip": "C:\\Users\\purin\\Desktop\\Programming\\Projects\\TopicStore\\backend\\Infrastructure\\Security\\JwtProvider.cs",
+              "RelativeToolTip": "Infrastructure\\Security\\JwtProvider.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-25T18:20:42.596Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "RegisterUserDto.cs",
+              "DocumentMoniker": "C:\\Users\\purin\\Desktop\\Programming\\Projects\\TopicStore\\backend\\Application\\Dtos\\Users\\RegisterUserDto.cs",
+              "RelativeDocumentMoniker": "Application\\Dtos\\Users\\RegisterUserDto.cs",
+              "ToolTip": "C:\\Users\\purin\\Desktop\\Programming\\Projects\\TopicStore\\backend\\Application\\Dtos\\Users\\RegisterUserDto.cs",
+              "RelativeToolTip": "Application\\Dtos\\Users\\RegisterUserDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-25T18:19:31.131Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "IJwtProvider.cs",
+              "DocumentMoniker": "C:\\Users\\purin\\Desktop\\Programming\\Projects\\TopicStore\\backend\\Application\\Security\\IJwtProvider.cs",
+              "RelativeDocumentMoniker": "Application\\Security\\IJwtProvider.cs",
+              "ToolTip": "C:\\Users\\purin\\Desktop\\Programming\\Projects\\TopicStore\\backend\\Application\\Security\\IJwtProvider.cs",
+              "RelativeToolTip": "Application\\Security\\IJwtProvider.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-25T18:19:29.338Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "C:\\Users\\purin\\Desktop\\Programming\\Projects\\TopicStore\\backend\\Infrastructure\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\DependencyInjection.cs",
+              "ToolTip": "C:\\Users\\purin\\Desktop\\Programming\\Projects\\TopicStore\\backend\\Infrastructure\\DependencyInjection.cs",
+              "RelativeToolTip": "Infrastructure\\DependencyInjection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-25T18:21:33.287Z"
             }
           ]
         }
