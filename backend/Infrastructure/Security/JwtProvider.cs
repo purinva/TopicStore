@@ -1,16 +1,7 @@
-﻿using System.IdentityModel.Tokens.Jwt;
-using System.Security.Claims;
-using System.Text;
-using Application.Security;
-using Microsoft.Extensions.Configuration;
-using Microsoft.IdentityModel.Tokens;
-
-namespace Infrastructure.Security
+﻿namespace Infrastructure.Security
 {
-    public class JwtProvider(IConfiguration configuration)
-    : IJwtProvider
+    public class JwtProvider(IConfiguration configuration) : IJwtProvider
     {
-
         public string GenerateToken(Guid id, string username)
         {
             var key = Encoding.UTF8.GetBytes(configuration["Jwt:Key"]!);

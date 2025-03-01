@@ -1,2 +1,9 @@
 dotnet ef migrations add "Initial" -s "./Api/" -p "./Infrastructure/"
+
+
+
+dotnet ef database update -s "./Api/" -p "./Infrastructure/"
+
+
+
 dotnet watch --no-hot-reload

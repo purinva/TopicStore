@@ -1,8 +1,4 @@
-﻿using Domain.Entities;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata.Builders;
-
-namespace Infrastructure.Data.Configuration
+﻿namespace Infrastructure.Data.Configuration
 {
     public class TopicConfiguration
         : IEntityTypeConfiguration<Topic>
@@ -10,7 +6,7 @@ namespace Infrastructure.Data.Configuration
         public void Configure(
             EntityTypeBuilder<Topic> builder)
         {
-            builder.HasKey(t => t.Id);  // Указываем, что Id - это первичный ключ
+            builder.HasKey(t => t.TopicId);  // Указываем, что Id - это первичный ключ
 
             // Мягкое удаление
             builder.HasQueryFilter(t => !t.IsDeleted); // Фильтрация по IsDeleted для всех запросов

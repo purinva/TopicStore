@@ -1,7 +1,4 @@
-﻿using Application.Dtos.Topics;
-using FluentValidation;
-
-namespace Application.Validators
+﻿namespace Application.Validators
 {
     public class CreateTopicDtoValidator 
         : AbstractValidator<CreateTopicDto>

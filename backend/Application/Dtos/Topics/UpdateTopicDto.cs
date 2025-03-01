@@ -1,9 +1,8 @@
 ﻿namespace Application.Dtos.Topics
 {
     public record UpdateTopicDto(
-        Guid Id,
+        Guid TopicId,
         string Title,
         string Description,
-        DateTime EventStart,
-        Guid UserId);
+        DateTime EventStart);
 }

@@ -1,25 +1,24 @@
-﻿using Application.CQRS.Topics.Queries;
-using AutoMapper;
-using Domain.Entities;
-using Infrastructure.Data.DataDbContext;
-using MediatR;
-using Microsoft.EntityFrameworkCore;
-
-namespace Infrastructure.CQRS.Topics.Queries
+﻿namespace Infrastructure.CQRS.Topics.Queries
 {
     public class GetAllTopicsQueryHandler(
-        ApplicationDbContext dbContext)
-        : IRequestHandler<GetAllTopicsQuery, List<Topic>>
+        ApplicationDbContext dbContext,
+        IMapper mapper)
+        : IRequestHandler<GetAllTopicsQuery, List<ResponseTopicDto>>
     {
-
-        public async Task<List<Topic>> Handle(
+        public async Task<List<ResponseTopicDto>> Handle(
             GetAllTopicsQuery request,
             CancellationToken cancellationToken)
         {
+            var userId = request.userId;
+
             var topics = await dbContext.Topics
+                .AsNoTracking()
+                .Where(u => u.UserId == userId)
                 .ToListAsync(cancellationToken);
 
-            return topics;
+            return topics
+                .Select(t => mapper.Map<ResponseTopicDto>(t))
+                .ToList();
         }
     }
 }

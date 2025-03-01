@@ -1,6 +1,4 @@
-﻿using Application.Dtos.Users;
-
-namespace Application.Security
+﻿namespace Application.Security
 {
     public interface IJwtProvider
     {

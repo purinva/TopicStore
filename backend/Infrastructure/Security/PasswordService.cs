@@ -1,6 +1,4 @@
-﻿using Application.Security;
-
-namespace Infrastructure.Security
+﻿namespace Infrastructure.Security
 {
     public class PasswordService : IPasswordService
     {

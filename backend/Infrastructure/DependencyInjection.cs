@@ -1,11 +1,4 @@
-﻿using Application.Security;
-using Infrastructure.Data.DataDbContext;
-using Infrastructure.Security;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-
-namespace Infrastructure
+﻿namespace Infrastructure
 {
     public static class DependencyInjection
     {
@@ -13,9 +6,11 @@ namespace Infrastructure
             this IServiceCollection services,
             IConfiguration configuration)
         {
-            services.AddDbContext<ApplicationDbContext>(options => 
-            options.UseSqlServer(configuration
-                .GetConnectionString("DefaultConnection")));
+            var connectionString = configuration.GetConnectionString("DefaultConnection");
+            services.AddDbContext<ApplicationDbContext>(options =>
+            {
+                options.UseNpgsql(connectionString);
+            });
 
             services.AddScoped<IPasswordService, PasswordService>();
             services.AddScoped<IJwtProvider, JwtProvider>();

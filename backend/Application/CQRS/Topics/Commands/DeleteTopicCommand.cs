@@ -1,10 +1,7 @@
-﻿using MediatR;
-
-namespace Application.CQRS.Topics.Commands
+﻿namespace Application.CQRS.Topics.Commands
 {
-    public class DeleteTopicCommand
-        : IRequest<Unit>
+    public class DeleteTopicCommand : IRequest<Unit>
     {
-        public Guid Id { get; set; }
+        public Guid topicId { get; set; }
     }
 }

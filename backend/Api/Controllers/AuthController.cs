@@ -1,12 +1,6 @@
 ﻿using Application.Dtos.Users;
 using Application.Security;
 using AutoMapper;
-using Domain.Entities;
-using FluentValidation;
-using Infrastructure.Data.DataDbContext;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-
 namespace Api.Controllers
 {
     [ApiController]
@@ -34,17 +28,18 @@ namespace Api.Controllers
             }
 
             var user = await dbContext.Users
-                .FirstOrDefaultAsync(u => u.Email == loginUserDto.Email,
-                    cancellationToken);
+                .FirstOrDefaultAsync(
+                u => u.Email == loginUserDto.Email,
+                cancellationToken);
 
-            if (user == null || passwordService.VerifyPassword(
+            if (user == null || !passwordService.VerifyPassword(
                 loginUserDto.Password!, user.PasswordHash!))
             {
                 return Results.Problem("Такой пользователь не зарегистрирован", statusCode: 401);
             }
 
             var token = jwtProvider
-                .GenerateToken(user.Id, loginUserDto.Email!);
+                .GenerateToken(user.UserId, loginUserDto.Email!);
 
             return Results.Ok(new { Token = token });
         }
@@ -63,8 +58,9 @@ namespace Api.Controllers
             }
 
             var user = await dbContext.Users
-                .FirstOrDefaultAsync(u => u.Email == registerUserDto.Email,
-                    cancellationToken);
+                .FirstOrDefaultAsync(
+                u => u.Email == registerUserDto.Email,
+                cancellationToken);
 
             if (user != null)
             {
@@ -76,10 +72,11 @@ namespace Api.Controllers
             newUser.PasswordHash = passwordService
                 .HashPassword(registerUserDto.Password!);
 
-            await dbContext.Users.AddAsync(newUser);
+            await dbContext.Users.AddAsync(newUser, cancellationToken);
+            await dbContext.SaveChangesAsync(cancellationToken);
 
             var token = jwtProvider
-                .GenerateToken(newUser.Id, newUser.Email!);
+                .GenerateToken(newUser.UserId, newUser.Email!);
 
             return Results.Ok(new { Token = token });
         }

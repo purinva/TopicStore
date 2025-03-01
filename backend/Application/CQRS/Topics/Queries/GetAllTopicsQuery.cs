@@ -1,10 +1,7 @@
-﻿using Domain.Entities;
-using MediatR;
-
-namespace Application.CQRS.Topics.Queries
+﻿namespace Application.CQRS.Topics.Queries
 {
-    public class GetAllTopicsQuery 
-        : IRequest<List<Topic>>
+    public class GetAllTopicsQuery : IRequest<List<ResponseTopicDto>>
     {
+        public Guid userId { get; set; }
     }
 }

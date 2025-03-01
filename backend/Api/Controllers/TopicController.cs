@@ -1,12 +1,4 @@
-﻿using Application.CQRS.Topics.Commands;
-using Application.CQRS.Topics.Queries;
-using Application.Dtos.Topics;
-using FluentValidation;
-using MediatR;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
-
-namespace Api.Controllers
+﻿namespace Api.Controllers
 {
     [ApiController]
     [Authorize]
@@ -17,7 +9,6 @@ namespace Api.Controllers
         IValidator<UpdateTopicDto> updateTopicDtoValidator)
         : ControllerBase
     {
-
         [HttpPost]
         public async Task<IResult> Create(
             [FromBody] CreateTopicDto createTopicDto)
@@ -30,9 +21,14 @@ namespace Api.Controllers
                 return Results.BadRequest(validationResult.Errors);
             }
 
-            var command = new CreateTopicCommand 
+            var userIdClaim = User.Claims
+                .FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier);
+            var userId = Guid.Parse(userIdClaim!.Value);
+
+            var command = new CreateTopicCommand
             {
-                createTopicDto = createTopicDto 
+                createTopicDto = createTopicDto,
+                userId = userId
             };
             var result = await mediator.Send(command);
 
@@ -42,16 +38,23 @@ namespace Api.Controllers
         [HttpGet]
         public async Task<IResult> GetAll()
         {
-            var query = new GetAllTopicsQuery();
+            var userIdClaim = User.Claims
+                .FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier);
+            var userId = Guid.Parse(userIdClaim!.Value);
+
+            var query = new GetAllTopicsQuery
+            {
+                userId = userId
+            };
             var result = await mediator.Send(query);
 
             return Results.Ok(result);
         }
 
-        [HttpGet("{id}")]
-        public async Task<IResult> GetById(Guid id)
+        [HttpGet("{topicId}")]
+        public async Task<IResult> GetById(Guid topicId)
         {
-            var query = new GetTopicByIdQuery { Id = id };
+            var query = new GetTopicByIdQuery { topicId = topicId };
             var result = await mediator.Send(query);
 
             return Results.Ok(result);
@@ -71,21 +74,20 @@ namespace Api.Controllers
 
             var command = new UpdateTopicCommand 
             {
-                updateTopicDto = updateTopicDto 
+                updateTopicDto = updateTopicDto
             };
             var result = await mediator.Send(command);
 
             return Results.Ok(result);
         }
 
-        [HttpDelete("{id}")]
-        public async Task<IResult> Delete(Guid id)
+        [HttpDelete("{topicId}")]
+        public async Task<IResult> Delete(Guid topicId)
         {
-            var command = new DeleteTopicCommand { Id = id };
+            var command = new DeleteTopicCommand { topicId = topicId };
             var result = await mediator.Send(command);
 
             return Results.NoContent();
         }
     }
-
 }

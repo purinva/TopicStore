@@ -1,8 +1,4 @@
-﻿using Domain.Entities;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata.Builders;
-
-namespace Infrastructure.Data.Configuration
+﻿namespace Infrastructure.Data.Configuration
 {
     public class UserConfiguration
         : IEntityTypeConfiguration<User>
@@ -11,7 +7,7 @@ namespace Infrastructure.Data.Configuration
             EntityTypeBuilder<User> builder)
         {
             builder
-                .HasKey(u => u.Id);  // Указываем, что Id - это первичный ключ
+                .HasKey(u => u.UserId);  // Указываем, что Id - это первичный ключ
 
             builder
                 .HasIndex(u => u.Email)

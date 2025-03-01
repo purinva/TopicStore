@@ -1,12 +1,4 @@
-﻿using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Configuration;
-using Application.Mapping;
-using Application.Validators;
-using FluentValidation;
-using Application.Dtos.Topics;
-using Application.Dtos.Users;
-
-namespace Application
+﻿namespace Application
 {
     public static class DependencyInjection
     {
