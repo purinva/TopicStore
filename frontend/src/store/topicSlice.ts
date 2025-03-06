@@ -5,7 +5,9 @@ import { store } from "./store";
 
 const initialState: TopicState = {
   items: [],
+  totalPages: 0,
   getTopicsError: null,
+  getTotalError: null,
   createTopicError: null,
   updateTopicError: null,
   deleteTopicError: null
@@ -17,6 +19,24 @@ export const getTopics = createAsyncThunk<Topic[], number>(
     try {
         const jwt = store.getState().auth.jwt;
         const response = await axios.get(`${URL}/topic?page=${page}`, {
+            headers: {
+                Authorization: `Bearer ${jwt}`
+            }
+        });
+        return response.data;
+    } catch (error) {
+      const axiosError = error as AxiosError<{ message: string }>;
+			return rejectWithValue(axiosError.response?.data?.message || "Произошла ошибка, попробуйте снова.");
+    }
+  }
+);
+
+export const getTotal = createAsyncThunk<number>(
+  "topic/getTotal",
+  async (_, { rejectWithValue }) => {
+    try {
+        const jwt = store.getState().auth.jwt;
+        const response = await axios.get(`${URL}/topic/total`, {
             headers: {
                 Authorization: `Bearer ${jwt}`
             }
@@ -120,6 +140,15 @@ const topicSlice = createSlice({
       })
       .addCase(getTopics.rejected, (state, action) => {
         state.getTopicsError = action.payload as string;
+      });
+
+    builder
+      .addCase(getTotal.fulfilled, (state, action) => {
+        state.totalPages = action.payload;
+        state.getTotalError = null;
+      })
+      .addCase(getTotal.rejected, (state, action) => {
+        state.getTotalError = action.payload as string;
       });
 
     builder

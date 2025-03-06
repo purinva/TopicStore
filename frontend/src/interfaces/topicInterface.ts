@@ -20,7 +20,9 @@ export interface TopicCreateDto {
   
 export interface TopicState {
   items: Topic[];
+  totalPages: number;
   getTopicsError: string | null;
+  getTotalError: string | null;
   createTopicError: string | null;
   updateTopicError: string | null;
   deleteTopicError: string | null;

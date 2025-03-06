@@ -6,10 +6,12 @@ import { loadJwtState } from "./storage";
 
 const initialState: UserState = {
 	jwt: loadJwtState(JWT_PERSISTENT_STATE)?.jwt ?? null,
-	error: null
+	loginError: null,
+	registerError: null
 };
 
-export const login = createAsyncThunk<string, Profile>('auth/login',
+export const login = createAsyncThunk<string, Profile>(
+	'auth/login',
 	async (profile, { rejectWithValue }) => {
 		try {
 			const response = await axios.post<AuthResponse>(`${URL}/auth/login`, {
@@ -24,7 +26,8 @@ export const login = createAsyncThunk<string, Profile>('auth/login',
 	}
 );
 
-export const register = createAsyncThunk<string, Profile>('auth/register',
+export const register = createAsyncThunk<string, Profile>(
+	'auth/register',
 	async (profile, { rejectWithValue }) => {
 		try {
 			const response = await axios.post<AuthResponse>(`${URL}/auth/register`, {
@@ -45,28 +48,28 @@ const authSlice = createSlice({
 	reducers: {
 		logout: (state) => {
 			state.jwt = null;
-			state.error = null;
+			state.loginError = null;
 		}
 	},
 	extraReducers: (builder) => {
 		builder
 			.addCase(login.fulfilled, (state, action) => {
 				state.jwt = action.payload;
-				state.error = null;
+				state.loginError = null;
 			})
 			.addCase(login.rejected, (state, action) => {
 				state.jwt = null;
-				state.error = action.payload as string;
+				state.loginError = action.payload as string;
 			});
 
 		builder
 			.addCase(register.fulfilled, (state, action) => {
 				state.jwt = action.payload;
-				state.error = null;
+				state.registerError = null;
 			})
 			.addCase(register.rejected, (state, action) => {
 				state.jwt = null;
-				state.error = action.payload as string;
+				state.registerError = action.payload as string;
 			});
 	}
 });

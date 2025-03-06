@@ -3,7 +3,7 @@ import { TopicCreateDto } from "../../interfaces/topicInterface";
 import { createTopic } from "../../store/topicSlice";
 import { AppDispatch, RootState } from "../../store/store";
 
-function FormTopic() {
+export function FormTopic() {
 
     const error = useSelector((state: RootState) => state.topic.createTopicError);
     const dispatch = useDispatch<AppDispatch>();
@@ -34,5 +34,3 @@ function FormTopic() {
         </div>
     )
 }
-
-export default FormTopic;

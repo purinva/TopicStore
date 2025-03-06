@@ -9,7 +9,8 @@ export interface AuthResponse {
 
 export interface UserState {
 	jwt: string | null;
-	error: string | null;
+	loginError: string | null;
+	registerError: string | null;
 }
 
 export interface UserPersistentState {

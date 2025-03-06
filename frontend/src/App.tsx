@@ -1,46 +1,42 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css'
 import { Provider } from 'react-redux';
-import { URL } from './config/config.ts';
-import axios from 'axios';
 import { store } from './store/store.ts';
 import { RequireAuth } from './helpers/RequireAuth.tsx';
-import { TopicLayout } from './layouts/TopicLayout.tsx';
+import { TopicLayout } from './layouts/TopicLayout/TopicLayout.tsx';
+import { TopicPage } from './pages/TopicPage/TopicPage.tsx';
+import { AuthLayout } from './layouts/AuthLayout/AuthLayout.tsx';
+import { LoginPage } from './pages/LoginPage/LoginPage.tsx';
+import { ErrorLayout } from './layouts/ErrorLayout/ErrorLayout.tsx';
+import { ErrorPage } from './pages/ErrorPage/ErrorPage.tsx';
+import { RegisterPage } from './pages/RegisterPage/RegisterPage.tsx';
 
-  const router = createBrowserRouter([
-    {
-      path: '/topic',
-      element: <RequireAuth><TopicLayout/></RequireAuth>,
-      children: [
-        {
-          path: '/:id',
-          element: <Topic/>,
-          errorElement: <>Ошибка</>,
-          loader: async ({ params }) => {
-            try {
-              const response = await axios
-                .get(`${URL}/topic/${params.id}`);
-              return response.data;
-            }
-            catch (error) {
-              console.error('Ошибка загрузки топика:', error);
-              throw new Response('Ошибка загрузки топика', { status: 500 });
-            }
-          }
-        }
-      ]
-    },
-    {
-      path: '/auth',
-		  element: <AuthLayout/>,
-		  children: [
-        { path: '/login', element: <Login/> }, 
-        { path: '/register', element: <Register/> }
-      ]
-    }
-  ]);
+const router = createBrowserRouter([
+  {
+    path: 'topic',
+    element: <RequireAuth><TopicLayout/></RequireAuth>,
+    children: [
+      { path: '/', element: <TopicPage/> }, 
+    ]
+  },
+  {
+    path: '/auth',
+    element: <AuthLayout/>,
+    children: [
+      { path: '/', element: <LoginPage/> }, 
+      { path: 'register', element: <RegisterPage/> }
+    ]
+  },
+  {
+    path: "*",
+    element: <ErrorLayout/>,
+    children: [
+      { path: '/', element: <ErrorPage/> },
+    ]
+  }
+]);
 
-function App() {
+export function App() {
 
   return (
       <Provider store={store}>
@@ -48,5 +44,3 @@ function App() {
       </Provider>
   )
 }
-
-export default App;
