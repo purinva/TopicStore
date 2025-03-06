@@ -14,6 +14,8 @@
             var topics = await dbContext.Topics
                 .AsNoTracking()
                 .Where(u => u.UserId == userId)
+                .Skip((request.page - 1) * request.size)
+                .Take(request.size)
                 .ToListAsync(cancellationToken);
 
             return topics

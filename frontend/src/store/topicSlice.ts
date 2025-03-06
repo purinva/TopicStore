@@ -8,7 +8,7 @@ const initialState: TopicState = {
   error: null,
 };
 
-const getTopics = createAsyncThunk<Topic[], void>(
+export const getTopics = createAsyncThunk<Topic[], void>(
   "topic/getTopics",
   async (_, { rejectWithValue }) => {
     try {
@@ -46,7 +46,7 @@ const getTopics = createAsyncThunk<Topic[], void>(
 //   }
 // );
 
-const updateTopic = createAsyncThunk<Topic, TopicUpdateDto>(
+export const updateTopic = createAsyncThunk<Topic, TopicUpdateDto>(
   "topic/updateTopic",
   async (topicUpdateDto, { rejectWithValue }) => {
     try {
@@ -66,7 +66,7 @@ const updateTopic = createAsyncThunk<Topic, TopicUpdateDto>(
   }
 );
 
-const createTopic = createAsyncThunk<Topic, TopicCreateDto>(
+export const createTopic = createAsyncThunk<Topic, TopicCreateDto>(
   "topic/createTopic",
   async (topicCreateDto, { rejectWithValue }) => {
     try {
@@ -86,7 +86,7 @@ const createTopic = createAsyncThunk<Topic, TopicCreateDto>(
   }
 );
 
-const deleteTopic = createAsyncThunk<string, string>(
+export const deleteTopic = createAsyncThunk<string, string>(
   "topic/deleteTopic",
   async (topicId, { rejectWithValue }) => {
     try {

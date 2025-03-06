@@ -36,7 +36,8 @@
         }
 
         [HttpGet]
-        public async Task<IResult> GetAll()
+        public async Task<IResult> GetAll(
+            [FromQuery] int page = 1)
         {
             var userIdClaim = User.Claims
                 .FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier);
@@ -44,7 +45,9 @@
 
             var query = new GetAllTopicsQuery
             {
-                userId = userId
+                userId = userId,
+                page = page,
+                size = 5
             };
             var result = await mediator.Send(query);
 

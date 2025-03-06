@@ -9,7 +9,7 @@ const initialState: UserState = {
 	error: null
 };
 
-const login = createAsyncThunk<string, Profile>('auth/login',
+export const login = createAsyncThunk<string, Profile>('auth/login',
 	async (profile, { rejectWithValue }) => {
 		try {
 			const response = await axios.post<AuthResponse>(`${URL}/auth/login`, {
@@ -24,7 +24,7 @@ const login = createAsyncThunk<string, Profile>('auth/login',
 	}
 );
 
-const register = createAsyncThunk<string, Profile>('auth/register',
+export const register = createAsyncThunk<string, Profile>('auth/register',
 	async (profile, { rejectWithValue }) => {
 		try {
 			const response = await axios.post<AuthResponse>(`${URL}/auth/register`, {
