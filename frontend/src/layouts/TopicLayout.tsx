@@ -1,12 +1,13 @@
-import { useDispatch, useSelector } from "react-redux"
-import { AppDispatch, RootState } from "../store/store";
 import { useEffect } from "react";
 import { getTopics } from "../store/topicSlice";
-import FormTopic from "../components/FormTopic/FormTopic";
+import FormTopic from "../components/CreateTopicForm/CreateTopicForm";
+import ButtonExit from "../components/ButtonExit/ButtonExit";
+import TopicList from "../components/TopicList/TopicList";
+import { AppDispatch } from "../store/store";
+import { useDispatch } from "react-redux";
 
 export function TopicLayout() {
     
-    const topics = useSelector((state: RootState) => state.topic.items);
     const dispatch = useDispatch<AppDispatch>();
     
     useEffect(() => {
@@ -15,16 +16,13 @@ export function TopicLayout() {
 
     return (
         <div>
-            <ul>
-                {topics.map((topic) => (
-                    <li key={topic.topicId}>
-                        {topic.title}
-                        {topic.description}
-                        {topic.eventStart.toISOString()}
-                    </li>
-                ))}
-            </ul>
-            <FormTopic/>
+            <div>
+                <FormTopic/>
+                <ButtonExit/>
+            </div>
+            <div>
+                <TopicList/>                
+            </div>
         </div>
     )
 }

@@ -7,24 +7,32 @@
       "RelativeMoniker": "D:0:0:{5DAD0990-77A4-49A2-8C0F-20397B79C44F}|Api\\Api.csproj|solutionrelative:api\\controllers\\topiccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5DAD0990-77A4-49A2-8C0F-20397B79C44F}|Api\\Api.csproj|c:\\users\\purin\\desktop\\programming\\projects\\topicstore\\backend\\api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5DAD0990-77A4-49A2-8C0F-20397B79C44F}|Api\\Api.csproj|solutionrelative:api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0D5E0F68-B8C2-448F-9ED3-7AABED2F3ADF}|Application\\Application.csproj|c:\\users\\purin\\desktop\\programming\\projects\\topicstore\\backend\\application\\cqrs\\topics\\queries\\getpagesquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D5E0F68-B8C2-448F-9ED3-7AABED2F3ADF}|Application\\Application.csproj|solutionrelative:application\\cqrs\\topics\\queries\\getpagesquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA9D44E7-8609-4280-888F-704CC54F64AA}|Infrastructure\\Infrastructure.csproj|c:\\users\\purin\\desktop\\programming\\projects\\topicstore\\backend\\infrastructure\\cqrs\\topics\\queries\\getpagesqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA9D44E7-8609-4280-888F-704CC54F64AA}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\cqrs\\topics\\queries\\getpagesqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EA9D44E7-8609-4280-888F-704CC54F64AA}|Infrastructure\\Infrastructure.csproj|c:\\users\\purin\\desktop\\programming\\projects\\topicstore\\backend\\infrastructure\\cqrs\\topics\\queries\\getalltopicsqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EA9D44E7-8609-4280-888F-704CC54F64AA}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\cqrs\\topics\\queries\\getalltopicsqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EA9D44E7-8609-4280-888F-704CC54F64AA}|Infrastructure\\Infrastructure.csproj|c:\\users\\purin\\desktop\\programming\\projects\\topicstore\\backend\\infrastructure\\cqrs\\topics\\queries\\gettopicbyidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA9D44E7-8609-4280-888F-704CC54F64AA}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\cqrs\\topics\\queries\\gettopicbyidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0D5E0F68-B8C2-448F-9ED3-7AABED2F3ADF}|Application\\Application.csproj|c:\\users\\purin\\desktop\\programming\\projects\\topicstore\\backend\\application\\cqrs\\topics\\queries\\gettopicbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D5E0F68-B8C2-448F-9ED3-7AABED2F3ADF}|Application\\Application.csproj|solutionrelative:application\\cqrs\\topics\\queries\\gettopicbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0D5E0F68-B8C2-448F-9ED3-7AABED2F3ADF}|Application\\Application.csproj|c:\\users\\purin\\desktop\\programming\\projects\\topicstore\\backend\\application\\cqrs\\topics\\queries\\getalltopicsquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0D5E0F68-B8C2-448F-9ED3-7AABED2F3ADF}|Application\\Application.csproj|solutionrelative:application\\cqrs\\topics\\queries\\getalltopicsquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0D5E0F68-B8C2-448F-9ED3-7AABED2F3ADF}|Application\\Application.csproj|c:\\users\\purin\\desktop\\programming\\projects\\topicstore\\backend\\application\\cqrs\\topics\\queries\\gettopicbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0D5E0F68-B8C2-448F-9ED3-7AABED2F3ADF}|Application\\Application.csproj|solutionrelative:application\\cqrs\\topics\\queries\\gettopicbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EA9D44E7-8609-4280-888F-704CC54F64AA}|Infrastructure\\Infrastructure.csproj|c:\\users\\purin\\desktop\\programming\\projects\\topicstore\\backend\\infrastructure\\cqrs\\topics\\queries\\gettopicbyidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA9D44E7-8609-4280-888F-704CC54F64AA}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\cqrs\\topics\\queries\\gettopicbyidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DAD0990-77A4-49A2-8C0F-20397B79C44F}|Api\\Api.csproj|c:\\users\\purin\\desktop\\programming\\projects\\topicstore\\backend\\api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DAD0990-77A4-49A2-8C0F-20397B79C44F}|Api\\Api.csproj|solutionrelative:api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5DAD0990-77A4-49A2-8C0F-20397B79C44F}|Api\\Api.csproj|c:\\users\\purin\\desktop\\programming\\projects\\topicstore\\backend\\api\\globalusing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -95,27 +103,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "GetAllTopicsQueryHandler.cs",
-              "DocumentMoniker": "C:\\Users\\purin\\Desktop\\Programming\\Projects\\TopicStore\\backend\\Infrastructure\\CQRS\\Topics\\Queries\\GetAllTopicsQueryHandler.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\CQRS\\Topics\\Queries\\GetAllTopicsQueryHandler.cs",
-              "ToolTip": "C:\\Users\\purin\\Desktop\\Programming\\Projects\\TopicStore\\backend\\Infrastructure\\CQRS\\Topics\\Queries\\GetAllTopicsQueryHandler.cs",
-              "RelativeToolTip": "Infrastructure\\CQRS\\Topics\\Queries\\GetAllTopicsQueryHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Title": "GetPagesQueryHandler.cs",
+              "DocumentMoniker": "C:\\Users\\purin\\Desktop\\Programming\\Projects\\TopicStore\\backend\\Infrastructure\\CQRS\\Topics\\Queries\\GetPagesQueryHandler.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\CQRS\\Topics\\Queries\\GetPagesQueryHandler.cs",
+              "ToolTip": "C:\\Users\\purin\\Desktop\\Programming\\Projects\\TopicStore\\backend\\Infrastructure\\CQRS\\Topics\\Queries\\GetPagesQueryHandler.cs",
+              "RelativeToolTip": "Infrastructure\\CQRS\\Topics\\Queries\\GetPagesQueryHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-06T05:59:59.378Z",
+              "WhenOpened": "2025-03-06T18:02:11.472Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\purin\\Desktop\\Programming\\Projects\\TopicStore\\backend\\Api\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "Api\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\purin\\Desktop\\Programming\\Projects\\TopicStore\\backend\\Api\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "Api\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "GetPagesQuery.cs",
+              "DocumentMoniker": "C:\\Users\\purin\\Desktop\\Programming\\Projects\\TopicStore\\backend\\Application\\CQRS\\Topics\\Queries\\GetPagesQuery.cs",
+              "RelativeDocumentMoniker": "Application\\CQRS\\Topics\\Queries\\GetPagesQuery.cs",
+              "ToolTip": "C:\\Users\\purin\\Desktop\\Programming\\Projects\\TopicStore\\backend\\Application\\CQRS\\Topics\\Queries\\GetPagesQuery.cs",
+              "RelativeToolTip": "Application\\CQRS\\Topics\\Queries\\GetPagesQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-03T04:15:09.031Z",
+              "WhenOpened": "2025-03-06T18:01:01.154Z",
               "EditorCaption": ""
             },
             {
@@ -126,7 +134,7 @@
               "RelativeDocumentMoniker": "Api\\Controllers\\TopicController.cs",
               "ToolTip": "C:\\Users\\purin\\Desktop\\Programming\\Projects\\TopicStore\\backend\\Api\\Controllers\\TopicController.cs",
               "RelativeToolTip": "Api\\Controllers\\TopicController.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAgwC8AAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAwwDgAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-04T07:36:29.673Z",
               "EditorCaption": ""
@@ -134,32 +142,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "GetTopicByIdQueryHandler.cs",
-              "DocumentMoniker": "C:\\Users\\purin\\Desktop\\Programming\\Projects\\TopicStore\\backend\\Infrastructure\\CQRS\\Topics\\Queries\\GetTopicByIdQueryHandler.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\CQRS\\Topics\\Queries\\GetTopicByIdQueryHandler.cs",
-              "ToolTip": "C:\\Users\\purin\\Desktop\\Programming\\Projects\\TopicStore\\backend\\Infrastructure\\CQRS\\Topics\\Queries\\GetTopicByIdQueryHandler.cs",
-              "RelativeToolTip": "Infrastructure\\CQRS\\Topics\\Queries\\GetTopicByIdQueryHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "GetAllTopicsQueryHandler.cs",
+              "DocumentMoniker": "C:\\Users\\purin\\Desktop\\Programming\\Projects\\TopicStore\\backend\\Infrastructure\\CQRS\\Topics\\Queries\\GetAllTopicsQueryHandler.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\CQRS\\Topics\\Queries\\GetAllTopicsQueryHandler.cs",
+              "ToolTip": "C:\\Users\\purin\\Desktop\\Programming\\Projects\\TopicStore\\backend\\Infrastructure\\CQRS\\Topics\\Queries\\GetAllTopicsQueryHandler.cs",
+              "RelativeToolTip": "Infrastructure\\CQRS\\Topics\\Queries\\GetAllTopicsQueryHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-06T06:02:53.367Z",
+              "WhenOpened": "2025-03-06T05:59:59.378Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "GetAllTopicsQuery.cs",
-              "DocumentMoniker": "C:\\Users\\purin\\Desktop\\Programming\\Projects\\TopicStore\\backend\\Application\\CQRS\\Topics\\Queries\\GetAllTopicsQuery.cs",
-              "RelativeDocumentMoniker": "Application\\CQRS\\Topics\\Queries\\GetAllTopicsQuery.cs",
-              "ToolTip": "C:\\Users\\purin\\Desktop\\Programming\\Projects\\TopicStore\\backend\\Application\\CQRS\\Topics\\Queries\\GetAllTopicsQuery.cs",
-              "RelativeToolTip": "Application\\CQRS\\Topics\\Queries\\GetAllTopicsQuery.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-06T06:00:12.447Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "GetTopicByIdQuery.cs",
               "DocumentMoniker": "C:\\Users\\purin\\Desktop\\Programming\\Projects\\TopicStore\\backend\\Application\\CQRS\\Topics\\Queries\\GetTopicByIdQuery.cs",
               "RelativeDocumentMoniker": "Application\\CQRS\\Topics\\Queries\\GetTopicByIdQuery.cs",
@@ -172,7 +167,45 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GetAllTopicsQuery.cs",
+              "DocumentMoniker": "C:\\Users\\purin\\Desktop\\Programming\\Projects\\TopicStore\\backend\\Application\\CQRS\\Topics\\Queries\\GetAllTopicsQuery.cs",
+              "RelativeDocumentMoniker": "Application\\CQRS\\Topics\\Queries\\GetAllTopicsQuery.cs",
+              "ToolTip": "C:\\Users\\purin\\Desktop\\Programming\\Projects\\TopicStore\\backend\\Application\\CQRS\\Topics\\Queries\\GetAllTopicsQuery.cs",
+              "RelativeToolTip": "Application\\CQRS\\Topics\\Queries\\GetAllTopicsQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T06:00:12.447Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\purin\\Desktop\\Programming\\Projects\\TopicStore\\backend\\Api\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Api\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\purin\\Desktop\\Programming\\Projects\\TopicStore\\backend\\Api\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Api\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T04:15:09.031Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GetTopicByIdQueryHandler.cs",
+              "DocumentMoniker": "C:\\Users\\purin\\Desktop\\Programming\\Projects\\TopicStore\\backend\\Infrastructure\\CQRS\\Topics\\Queries\\GetTopicByIdQueryHandler.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\CQRS\\Topics\\Queries\\GetTopicByIdQueryHandler.cs",
+              "ToolTip": "C:\\Users\\purin\\Desktop\\Programming\\Projects\\TopicStore\\backend\\Infrastructure\\CQRS\\Topics\\Queries\\GetTopicByIdQueryHandler.cs",
+              "RelativeToolTip": "Infrastructure\\CQRS\\Topics\\Queries\\GetTopicByIdQueryHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T06:02:53.367Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "Topic.cs",
               "DocumentMoniker": "C:\\Users\\purin\\Desktop\\Programming\\Projects\\TopicStore\\backend\\Domain\\Models\\Topic.cs",
               "RelativeDocumentMoniker": "Domain\\Models\\Topic.cs",
@@ -184,7 +217,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "RegisterUserDto.cs",
               "DocumentMoniker": "C:\\Users\\purin\\Desktop\\Programming\\Projects\\TopicStore\\backend\\Application\\Dtos\\Users\\RegisterUserDto.cs",
               "RelativeDocumentMoniker": "Application\\Dtos\\Users\\RegisterUserDto.cs",
@@ -196,7 +229,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "LoginUserDto.cs",
               "DocumentMoniker": "C:\\Users\\purin\\Desktop\\Programming\\Projects\\TopicStore\\backend\\Application\\Dtos\\Users\\LoginUserDto.cs",
               "RelativeDocumentMoniker": "Application\\Dtos\\Users\\LoginUserDto.cs",
@@ -208,7 +241,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "UpdateTopicDto.cs",
               "DocumentMoniker": "C:\\Users\\purin\\Desktop\\Programming\\Projects\\TopicStore\\backend\\Application\\Dtos\\Topics\\UpdateTopicDto.cs",
               "RelativeDocumentMoniker": "Application\\Dtos\\Topics\\UpdateTopicDto.cs",
@@ -220,7 +253,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "ResponseTopicDto.cs",
               "DocumentMoniker": "C:\\Users\\purin\\Desktop\\Programming\\Projects\\TopicStore\\backend\\Application\\Dtos\\Topics\\ResponseTopicDto.cs",
               "RelativeDocumentMoniker": "Application\\Dtos\\Topics\\ResponseTopicDto.cs",
@@ -232,7 +265,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "CreateTopicDto.cs",
               "DocumentMoniker": "C:\\Users\\purin\\Desktop\\Programming\\Projects\\TopicStore\\backend\\Application\\Dtos\\Topics\\CreateTopicDto.cs",
               "RelativeDocumentMoniker": "Application\\Dtos\\Topics\\CreateTopicDto.cs",
@@ -244,7 +277,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "MappingProfile.cs",
               "DocumentMoniker": "C:\\Users\\purin\\Desktop\\Programming\\Projects\\TopicStore\\backend\\Application\\Mapping\\MappingProfile.cs",
               "RelativeDocumentMoniker": "Application\\Mapping\\MappingProfile.cs",
@@ -256,7 +289,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "GlobalUsing.cs",
               "DocumentMoniker": "C:\\Users\\purin\\Desktop\\Programming\\Projects\\TopicStore\\backend\\Api\\GlobalUsing.cs",
               "RelativeDocumentMoniker": "Api\\GlobalUsing.cs",
@@ -264,12 +297,11 @@
               "RelativeToolTip": "Api\\GlobalUsing.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-02T01:03:49.334Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-02T01:03:49.334Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\purin\\Desktop\\Programming\\Projects\\TopicStore\\backend\\Api\\Program.cs",
               "RelativeDocumentMoniker": "Api\\Program.cs",
@@ -281,7 +313,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\purin\\Desktop\\Programming\\Projects\\TopicStore\\backend\\Api\\appsettings.Development.json",
               "RelativeDocumentMoniker": "Api\\appsettings.Development.json",
@@ -293,7 +325,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\purin\\Desktop\\Programming\\Projects\\TopicStore\\backend\\Api\\appsettings.json",
               "RelativeDocumentMoniker": "Api\\appsettings.json",
@@ -305,7 +337,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "DependencyInjection.cs",
               "DocumentMoniker": "C:\\Users\\purin\\Desktop\\Programming\\Projects\\TopicStore\\backend\\Api\\DependencyInjection.cs",
               "RelativeDocumentMoniker": "Api\\DependencyInjection.cs",
@@ -317,7 +349,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "Dockerfile",
               "DocumentMoniker": "C:\\Users\\purin\\Desktop\\Programming\\Projects\\TopicStore\\backend\\Api\\Dockerfile",
               "RelativeDocumentMoniker": "Api\\Dockerfile",
@@ -329,7 +361,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "docker-compose.yml",
               "DocumentMoniker": "C:\\Users\\purin\\Desktop\\Programming\\Projects\\TopicStore\\backend\\Api\\docker-compose.yml",
               "RelativeDocumentMoniker": "Api\\docker-compose.yml",

@@ -5,15 +5,18 @@ import { store } from "./store";
 
 const initialState: TopicState = {
   items: [],
-  error: null,
+  getTopicsError: null,
+  createTopicError: null,
+  updateTopicError: null,
+  deleteTopicError: null
 };
 
-export const getTopics = createAsyncThunk<Topic[], void>(
+export const getTopics = createAsyncThunk<Topic[], number>(
   "topic/getTopics",
-  async (_, { rejectWithValue }) => {
+  async (page, { rejectWithValue }) => {
     try {
         const jwt = store.getState().auth.jwt;
-        const response = await axios.get(`${URL}/topic`, {
+        const response = await axios.get(`${URL}/topic?page=${page}`, {
             headers: {
                 Authorization: `Bearer ${jwt}`
             }
@@ -113,10 +116,10 @@ const topicSlice = createSlice({
     builder
       .addCase(getTopics.fulfilled, (state, action) => {
         state.items = action.payload;
-        state.error = null;
+        state.getTopicsError = null;
       })
       .addCase(getTopics.rejected, (state, action) => {
-        state.error = action.payload as string;
+        state.getTopicsError = action.payload as string;
       });
 
     builder
@@ -124,29 +127,29 @@ const topicSlice = createSlice({
         const updateTopicId = action.payload.topicId;
         const index = state.items.findIndex((topic) => topic.topicId === updateTopicId);
         state.items[index] = action.payload;
-        state.error = null;
+        state.updateTopicError = null;
       })
       .addCase(updateTopic.rejected, (state, action) => {
-        state.error = action.payload as string;
+        state.updateTopicError = action.payload as string;
       });
 
     builder
       .addCase(createTopic.fulfilled, (state, action) => {
         state.items.push(action.payload);
-        state.error = null;
+        state.createTopicError = null;
       })
       .addCase(createTopic.rejected, (state, action) => {
-        state.error = action.payload as string;
+        state.createTopicError = action.payload as string;
       });
 
     builder
       .addCase(deleteTopic.fulfilled, (state, action) => {
         const topicId = action.payload;
         state.items = state.items.filter(topic => topic.topicId !== topicId);
-        state.error = null;
+        state.deleteTopicError = null;
       })
       .addCase(deleteTopic.rejected, (state, action) => {
-        state.error = action.payload as string;
+        state.deleteTopicError = action.payload as string;
       });
   }
 });

@@ -54,6 +54,22 @@
             return Results.Ok(result);
         }
 
+        [HttpGet("total")]
+        public async Task<IResult> GetTotalTopics()
+        {
+            var userIdClaim = User.Claims
+                .FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier);
+            var userId = Guid.Parse(userIdClaim!.Value);
+
+            var query = new GetPagesQuery
+            {
+                userId = userId
+            };
+            var result = await mediator.Send(query);
+
+            return Results.Ok(result);
+        }
+
         [HttpGet("{topicId}")]
         public async Task<IResult> GetById(Guid topicId)
         {
