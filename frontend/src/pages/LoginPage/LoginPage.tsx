@@ -1,9 +1,9 @@
 import { useDispatch } from "react-redux"
 import { login } from "../../store/authSlice";
 import React from "react";
-import { Profile } from "../../interfaces/authInterface";
 import { AppDispatch, store } from "../../store/store";
 import { useNavigate } from "react-router-dom";
+import { mapEventIntoAuth } from "../../mappers/mapEventIntoAuth";
 
 export function LoginPage() {
 
@@ -12,13 +12,8 @@ export function LoginPage() {
     const navigate = useNavigate();
 
     const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
-        const formElements = event.currentTarget.elements;
-        const email = (formElements.namedItem("email") as HTMLInputElement).value;
-        const password = (formElements.namedItem("password") as HTMLInputElement).value;
-        const user: Profile = {
-            email: email,
-            password: password
-        }
+        event.preventDefault();
+        const user = mapEventIntoAuth(event);
         await dispatch(login(user));
         if (!loginError) {
             navigate("topic");

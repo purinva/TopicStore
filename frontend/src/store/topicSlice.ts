@@ -5,9 +5,11 @@ import { store } from "./store";
 
 const initialState: TopicState = {
   items: [],
+  topic: null,
   totalPages: 0,
   getTopicsError: null,
   getTotalError: null,
+  getTopicByIdError: null,
   createTopicError: null,
   updateTopicError: null,
   deleteTopicError: null
@@ -49,25 +51,23 @@ export const getTotal = createAsyncThunk<number>(
   }
 );
 
-// const getTopicById = createAsyncThunk<Topic>(
-//   "topic/getTopicById",
-//   async (topicId, { rejectWithValue }) => {
-//     try {
-//         const jwt = store.getState().auth.jwt;
-//         const response = await axios.get(`${URL}/topic/${topicId}`, {
-//             headers: {
-//                 Authorization: `Bearer ${jwt}`
-//             }
-//         });
-//         return response.data;
-//     } catch (error ) {
-//         if (error instanceof AxiosError) {
-//           const axiosError = error as AxiosError<{ message: string }>;
-//           return rejectWithValue(axiosError.response?.data?.message || "Произошла ошибка, попробуйте снова.");
-//         }
-//     }
-//   }
-// );
+export const getTopicById = createAsyncThunk<Topic, string>(
+  "topic/getTopicById",
+  async (topicId, { rejectWithValue }) => {
+    try {
+        const jwt = store.getState().auth.jwt;
+        const response = await axios.get(`${URL}/topic/${topicId}`, {
+            headers: {
+                Authorization: `Bearer ${jwt}`
+            }
+        });
+        return response.data;
+    } catch (error ) {
+      const axiosError = error as AxiosError<{ message: string }>;
+			return rejectWithValue(axiosError.response?.data?.message || "Произошла ошибка, попробуйте снова.");
+    }
+  }
+);
 
 export const updateTopic = createAsyncThunk<Topic, TopicUpdateDto>(
   "topic/updateTopic",
@@ -149,6 +149,15 @@ const topicSlice = createSlice({
       })
       .addCase(getTotal.rejected, (state, action) => {
         state.getTotalError = action.payload as string;
+      });
+
+    builder
+      .addCase(getTopicById.fulfilled, (state, action) => {
+        state.topic = action.payload;
+        state.getTopicByIdError = null;
+      })
+      .addCase(getTopicById.rejected, (state, action) => {
+        state.getTopicByIdError = action.payload as string;
       });
 
     builder
