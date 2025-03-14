@@ -14,26 +14,26 @@ import { TopicByIdPage } from './pages/TopicByIdPage/TopicByIdPage.tsx';
 
 const router = createBrowserRouter([
   {
-    path: 'topic',
+    path: "/topic",
     element: <RequireAuth><TopicLayout/></RequireAuth>,
     children: [
-      { path: '/', element: <TopicPage/> },
-      { path: '/:topicId', element: <TopicByIdPage/> }, 
+      { index: true, element: <TopicPage/> },
+      { path: ":topicId", element: <TopicByIdPage/> }, 
     ]
   },
   {
-    path: '/auth',
+    path: "/auth",
     element: <AuthLayout/>,
     children: [
-      { path: '/', element: <LoginPage/> }, 
-      { path: 'register', element: <RegisterPage/> }
+      { index: true, element: <LoginPage/> }, 
+      { path: "register", element: <RegisterPage/> }
     ]
   },
   {
     path: "*",
     element: <ErrorLayout/>,
     children: [
-      { path: '/', element: <ErrorPage/> },
+      { index: true, element: <ErrorPage/> },
     ]
   }
 ]);

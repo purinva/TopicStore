@@ -1,7 +1,4 @@
-﻿using Application.Dtos.Users;
-using Application.Security;
-using AutoMapper;
-namespace Api.Controllers
+﻿namespace Api.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]

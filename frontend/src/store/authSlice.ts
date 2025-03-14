@@ -18,7 +18,7 @@ export const login = createAsyncThunk<string, Profile>(
 				email: profile.email,
 				password: profile.password
 			});
-			return response.data.jwt;
+			return response.data.token;
 		} catch (error) {
 			const axiosError = error as AxiosError<{ message: string }>;
 			return rejectWithValue(axiosError.response?.data?.message || "Произошла ошибка, попробуйте снова.");
@@ -34,7 +34,7 @@ export const register = createAsyncThunk<string, Profile>(
 				email: profile.email,
 				password: profile.password,
 			});
-			return response.data.jwt;
+			return response.data.token;
 		} catch (error) {
 			const axiosError = error as AxiosError<{ message: string }>;
 			return rejectWithValue(axiosError.response?.data?.message || "Произошла ошибка, попробуйте снова.");
@@ -60,6 +60,7 @@ const authSlice = createSlice({
 			.addCase(login.rejected, (state, action) => {
 				state.jwt = null;
 				state.loginError = action.payload as string;
+				console.log(state.loginError);
 			});
 
 		builder

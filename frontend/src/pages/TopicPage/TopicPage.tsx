@@ -1,10 +1,10 @@
 import { useDispatch, useSelector } from "react-redux";
 import { AppDispatch, RootState } from "../../store/store";
-import { createTopic, deleteTopic, getTopics } from "../../store/topicSlice";
+import { createTopic, deleteTopic, getTopics, getTotal } from "../../store/topicSlice";
 import { authActions } from "../../store/authSlice";
 import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { mapEventIntoTopic } from "../../mappers/mapEventIntoTopic";
+import { mapEventIntoTopicCreateDto } from "../../mappers/mapEventIntoTopic";
 
 export function TopicPage() {
 
@@ -17,23 +17,28 @@ export function TopicPage() {
 
     useEffect(() => {
         dispatch(getTopics(currentPage));
+        dispatch(getTotal());
     }, [dispatch, currentPage])
 
     const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
-        const topic = mapEventIntoTopic(event);
+        const topic = mapEventIntoTopicCreateDto(event);
         await dispatch(createTopic(topic));
+        await dispatch(getTopics(currentPage));
+        await dispatch(getTotal());
     }
 
     const handleUpdate = (topicId: string) => {
         navigate(`/topic/${topicId}`);
     };    
 
-    const handleDelete = (topicId: string) => {
+    const handleDelete = async (topicId: string) => {
         const isConfirmed = window
             .confirm("Вы уверены, что хотите удалить эту тему?");
         if (isConfirmed) {
-            dispatch(deleteTopic(topicId));
+            await dispatch(deleteTopic(topicId));
+            await dispatch(getTopics(currentPage));
+            await dispatch(getTotal());
         }
     }
 
@@ -51,12 +56,12 @@ export function TopicPage() {
                 </div>
                 <button onClick={() => {
                     dispatch(authActions.logout());
-                    navigate('/auth/login');
+                    navigate('/auth');
                     }}>Выйти</button>
             </div>
             <div>
                 <ul>
-                    {topics.map((topic) => (
+                    {topics.map(topic => (
                         <li key={topic.topicId}>
                             <h3>{topic.title}</h3>
                             <p>{topic.description}</p>

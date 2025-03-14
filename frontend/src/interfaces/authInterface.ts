@@ -4,7 +4,7 @@ export interface Profile {
 }
 
 export interface AuthResponse {
-	jwt: string
+	token: string
 }
 
 export interface UserState {

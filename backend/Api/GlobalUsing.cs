@@ -17,3 +17,6 @@ global using Application.CQRS.Topics.Queries;
 global using Application.Dtos.Topics;
 global using MediatR;
 global using Microsoft.AspNetCore.Authorization;
+global using Application.Dtos.Users;
+global using Application.Security;
+global using AutoMapper;

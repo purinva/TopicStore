@@ -2,6 +2,7 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios, { AxiosError } from "axios";
 import { Topic, TopicCreateDto, TopicState, TopicUpdateDto } from "../interfaces/topicInterface";
 import { store } from "./store";
+import { URL } from "../config/config";
 
 const initialState: TopicState = {
   items: [],

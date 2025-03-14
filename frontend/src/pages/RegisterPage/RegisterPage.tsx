@@ -15,7 +15,7 @@ export function RegisterPage() {
         const user = mapEventIntoAuth(event);
         await dispatch(register(user));
         if (!registerError) {
-            navigate("auth");
+            navigate("/auth");
         }
     }
 
@@ -25,12 +25,12 @@ export function RegisterPage() {
                 <form onSubmit={handleSubmit}>
                     <input type="text" name="email" placeholder="Введите email"/>
                     <input type="text" name="password" placeholder="Введите пароль"/>
-                    <button type="submit"></button>
+                    <button type="submit">Зарегистрироваться</button>
                 </form>
-                {registerError && <div>registerError</div>}
+                {registerError && <div>{registerError}</div>}
             </div>
             <div>
-                <button onClick={() => navigate("auth")}>Войти</button>
+                <button onClick={() => navigate("/auth")}>Войти</button>
             </div>
         </div>
     )
